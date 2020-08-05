@@ -1,0 +1,153 @@
+@media (min-width: $desktop-width-only) {
+  .page-nav-top__content {
+    display: flex;
+    align-items: center;
+    padding: 20px 39px 0 32px;
+  }
+
+  .page-nav-top__wrapper {
+    margin-right: auto;
+  }
+
+  .page-nav-top__list {
+    width: 70.3%;
+    display: flex;
+  }
+
+  .page-nav-top__button {
+    display: none;
+  }
+
+  .page-nav-top__logo-image {
+    width: 134px;
+    height: 50px;
+  }
+}
+
+.page-nav-top__city {
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 2.6%;
+  @include text-options(12px, $orange, 14px, bold);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
+  outline: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: no-repeat 0 0 url(../img/icon-location.svg);
+    top: -5px;
+    left: -25px;
+    width: 16px;
+    height: 21px;
+  }
+
+  &:hover {
+    border-bottom: 1px dashed $orange;
+    cursor: pointer;
+  }
+}
+
+.page-nav-top__phone {
+  display: block;
+  @include reset-decoration;
+  @include text-options(14px, $text-white, 16px, 600);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+@media (max-width: $tablet-width) {
+  .page-nav-top__logo-image {
+    width: 96px;
+    height: 36px;
+  }
+
+  .page-nav-top__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .page-nav-top__button {
+    display: flex;
+  }
+
+  .page-nav-top__mobile {
+    @include text-options(14px, $text-white, 16px, 600);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-right: 8px;
+  }
+
+  .page-nav-top__toggle {
+    position: relative;
+    width: 20px;
+    height: 17px;
+    background-image: url("../img/M-burger-closed.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+  }
+
+  .page-nav-top--opened .page-nav-top__toggle {
+    width: 20px;
+    height: 17px;
+    background-image: url("../img/M-burger-opened.svg");
+  }
+
+  .page-nav-top--closed .page-nav-top__list {
+    display: none;
+  }
+
+  .page-nav-top--nojs .page-nav-top__button {
+    display: none;
+  }
+
+  .page-nav-top--nojs .page-nav-top__list {
+    display: block;
+  }
+
+  .page-nav-top--closed ~ .page-nav-social {
+    display: none;
+  }
+
+  .page-nav-top--nojs ~ .page-nav-social {
+    display: block;
+    display: flex;
+  }
+
+  .page-nav-top--nojs ~ .page-nav-social,
+  .page-nav-top--opened ~ .page-nav-social {
+    margin-bottom: 20%;
+  }
+
+  .page-nav-top__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 38px;
+    padding-bottom: 40px;
+  }
+
+  .page-nav-top__city {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+
+  .page-nav-top__phone {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255, 0.16);
+    text-align: center;
+  }
+}

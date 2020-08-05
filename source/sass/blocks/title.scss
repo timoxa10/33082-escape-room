@@ -1,0 +1,10 @@
+.title {
+  @include text-options(64px, $text-white, 70px, 800);
+}
+
+@media (max-width: $tablet-width) {
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}

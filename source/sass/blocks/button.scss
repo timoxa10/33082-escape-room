@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  background: $orange;
+  border-radius: 65px;
+  @include text-options(17px, $white, 30px, 800);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  @include reset-decoration;
+  padding:  17.5px 0;
+  width: 250px;
+  text-align: center;
+
+  &:hover {
+    background: #f39425;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .button {
+    border-radius: 48px;
+    font-size: 14px;
+    line-height: 16px;
+    padding:  15px 0;
+    width: 185px;
+  }
+}
