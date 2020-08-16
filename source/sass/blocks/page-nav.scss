@@ -20,10 +20,18 @@
 
 @media (max-width: $tablet-width) {
   .page-nav {
-    background: linear-gradient(159.27deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 0 16px;
+    z-index: 888;
   }
 
-  .page-nav__wrapper {
-    padding: 0 16px;
+  .page-nav--closed {
+    background: none;
+  }
+
+  .page-nav--opened {
+    background: $background-gradient, $color-overlay;
   }
 }

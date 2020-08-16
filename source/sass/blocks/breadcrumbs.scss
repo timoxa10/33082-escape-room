@@ -1,0 +1,9 @@
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs__item {
+  @include text-options(14px, $orange, 20px, 500);
+}

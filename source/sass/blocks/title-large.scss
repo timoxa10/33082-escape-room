@@ -1,0 +1,19 @@
+.title-large {
+  @include text-options(92px, $white, 87px, 900);
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+@media (max-width: $tablet-width) {
+  .title-large {
+    font-size: 62px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .title-large {
+    font-size: 42px;
+    line-height: 46px;
+    letter-spacing: 0;
+  }
+}

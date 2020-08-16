@@ -6,6 +6,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   @include reset-decoration;
+  @include reset-button-styles;
   padding:  17.5px 0;
   width: 250px;
   text-align: center;

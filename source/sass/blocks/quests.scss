@@ -1,0 +1,306 @@
+.quests {
+  padding-top: 8.8%;
+}
+
+.quests__title {
+  margin-top: 10px;
+}
+
+.quests__items {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-right: 10px;
+  margin-top: 37px;
+}
+
+.quests__item {
+  position: relative;
+  display: block;
+  width: 31.8%;
+  min-height: 232px;
+  margin-right: 2%;
+  margin-bottom: 32px;
+  border-radius: 3px;
+  overflow: hidden;
+  @include reset-decoration;
+
+  &:nth-child(3n+3) {
+    margin-right: 0;
+  }
+}
+
+.quests__badge::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 67px;
+  height: 30px;
+  background: no-repeat 0 0 url(../img/icon-badge-hit.svg);
+  z-index: 50;
+}
+
+.guests__item-child {
+  height: 100%;
+  width: 100%;
+  transition: all .5s;
+}
+
+.quests__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 19px;
+  min-height: 232px;
+}
+
+.quests__item:hover .quests__item-child,
+.quests__item:focus .quests__item-child {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.quests__item-title {
+  @include text-options(24px, $white, 29px, bold);
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-top: 0;
+}
+
+.quests__item-rules {
+  display: flex;
+}
+
+.quests__item-members,
+.quests__item-complexity {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+.quests__item-title {
+  margin-bottom: 12px;
+}
+
+.quests__item-address {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: no-repeat 0 0 url(../img/icon-location-small.svg);
+    top: 3px;
+    left: 2px;
+    width: 11px;
+    height: 14px;
+  }
+}
+
+.quests__item-members {
+  position: relative;
+  padding-left: 23px;
+  padding-right: 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: no-repeat 0 0 url(../img/icon-person.svg);
+    top: 3px;
+    left: 2px;
+    width: 13px;
+    height: 16px;
+  }
+}
+
+.quests__item-complexity {
+  position: relative;
+  padding-left: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: no-repeat 0 0 url(../img/icon-puzzle.svg);
+    top: 4px;
+    left: 13px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.quests__item-address,
+.quests__item-members,
+.quests__item-complexity {
+  @include text-options(13px, #e6e6e6, 19px, 500);
+  opacity: 0.8;
+}
+
+.quests__item-child--tomb {
+  background-image: $background-gradient, url("../img/D-quest-tomb@2x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-tomb@2x.jpg");
+  }
+}
+
+.quests__item-child--maniac {
+  background-image: $background-gradient, url("../img/D-quest-maniac@2x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-maniac@2x.jpg");
+  }
+}
+
+.quests__item-child--ritual {
+  background-image: $background-gradient, url("../img/D-quest-ritual@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-ritual@2x.jpg");
+  }
+}
+
+.quests__item-child--ghosts {
+  background-image: $background-gradient, url("../img/D-quest-ghosts@2x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-ghosts@2x.jpg");
+  }
+}
+
+.quests__item-child--mansion {
+  background-image: $background-gradient, url("../img/D-quest-old-mansion@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-old-mansion@2x.jpg");
+  }
+}
+
+.quests__item-child--woods {
+  background-image: $background-gradient, url("../img/D-quest-shed-in-a-woods@2x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-shed-in-a-woods@2x.jpg");
+  }
+}
+
+.quests__item-child--experiment {
+  background-image: $background-gradient, url("../img/D-quest-experiment@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-experiment@2x.jpg");
+  }
+}
+
+.quests__item-child--subway {
+  background-image: $background-gradient, url("../img/D-quest-subway-2033@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-subway-2033@2x.jpg");
+  }
+}
+
+.quests__item-child--attic {
+  background-image: $background-gradient, url("../img/D-quest-old-attic@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-old-attic@2x.jpg");
+  }
+}
+
+.quests__item-child--frontier {
+  background-image: $background-gradient, url("../img/D-quest-last-frontier@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-last-frontier@2x.jpg");
+  }
+}
+
+.quests__item-child--marc {
+  background-image: $background-gradient, url("../img/D-quest-marc-2056@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-quest-marc-2056@2x.jpg");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .quests {
+    padding-top: 12%;
+  }
+
+  .quests__items {
+    justify-content: space-around;
+  }
+
+  .quests__item {
+    width: 328px;
+  }
+
+  .quests__items {
+    padding-right: 0;
+  }
+
+  .quests__item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .quests {
+    padding-top: 88px;
+  }
+
+  .quests__menu {
+    padding-top: 12px;
+  }
+
+  .quests__items {
+    flex-direction: column;
+  }
+
+  .quests__item {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .quests__badge::before {
+    top: 15px;
+    right: 10px;
+  }
+
+  .quests__item:nth-child(2n+2),
+  .quests__item:nth-child(3n+3) {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: $mobile-small-width) {
+  .quests__item {
+    width: 280px;
+  }
+}

@@ -8,6 +8,12 @@
   text-decoration: none;
 }
 
+@mixin reset-button-styles() {
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
 @mixin flexible-background() {
   background-size: cover;
   background-repeat: no-repeat;

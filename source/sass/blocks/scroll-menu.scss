@@ -1,0 +1,90 @@
+.scroll-menu {
+  @include reset-list;
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.scroll-menu__item {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.scroll-menu__text--active {
+  border-bottom: 2px solid $orange;
+}
+
+.scroll-menu__logo {
+  margin-top: 5px;
+}
+
+.scroll-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-menu__item {
+  padding: 4px 35px 0px 0;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.32);
+  }
+
+  &:not(:first-child) {
+    padding-left: 43px;
+  }
+}
+
+.scroll-menu__icon {
+  margin-right: 12px;
+}
+
+.scroll-menu__text {
+  @include text-options(14px, $text-white, 20px, bold);
+  margin: 0;
+}
+
+@media (max-width: $mobile-width) {
+  .scroll-menu__icon--all {
+    width: 21px;
+    height: 24px;
+  }
+
+  .scroll-menu__icon--adventures {
+    width: 29px;
+    height: 24px;
+  }
+
+  .scroll-menu__icon--horror {
+    width: 24px;
+    height: 24px;
+  }
+
+  .scroll-menu__icon--mystic {
+    width: 24px;
+    height: 24px;
+  }
+
+  .scroll-menu__icon--crimestory {
+    width: 32px;
+    height: 24px;
+  }
+
+  .scroll-menu__icon--scifi {
+    width: 33px;
+    height: 20px;
+  }
+
+  .scroll-menu__item {
+    padding: 15px 15px 0 0;
+
+    &:not(:first-child) {
+      padding-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,232 @@
+.modal-contact {
+  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  border-radius: 3px;
+  position: absolute;
+  width: 480px;
+  min-height: 682px;
+  z-index: 999;
+  padding: 32px 0;
+
+  @include centered-position();
+}
+
+.modal-contact__close {
+  top: 35px;
+  right: 38px;
+}
+
+.modal-contact__form {
+  position: relative;
+}
+
+.modal-contact__wrapper {
+  padding-left: 32px;
+  padding-right: 48px;
+}
+
+.modal-contact__title {
+  margin-top: 0;
+  padding-left: 32px;
+  margin-bottom: 40px;
+}
+
+.modal-contact__field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.modal-contact__input-label {
+  display: block;
+  @include text-options(15px, $text-white, 22px, 500);
+  margin-bottom: 15px;
+}
+
+.modal-contact__input {
+  width: 100%;
+  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  padding: 16px 0 16px 24px;
+  @include text-options(14px, #e6e6e6, 17px, 500);
+}
+
+.modal-contact__textarea {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+  padding: 16px 0 0 24px;
+  @include text-options(14px, #e6e6e6, 17px, 500);
+}
+
+.modal-contact__input::-webkit-input-placeholder {
+  @include text-options(14px, #e6e6e6, 17px, 500);
+}
+
+.modal-contact__input:-moz-input-placeholder {
+  @include text-options(14px, #e6e6e6, 17px, 500);
+}
+
+.modal-contact__input::-moz-input-placeholder {
+  @include text-options(14px, #e6e6e6, 17px, 500);
+}
+
+.modal-contact__input:-ms-input-placeholder {
+  @include text-options(14px, #e6e6e6, 17px, 500);
+}
+
+.modal-contact__moved {
+  @include text-options(12px, rgba(230, 230, 230, 0.64), 17px, 500);
+}
+
+.modal-contact__moved {
+  display: none;
+}
+
+.modal-contact__input:focus ~ .modal-contact__moved,
+.modal-contact__input:not(:focus):valid ~ .modal-contact__moved {
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  background: #1f1d1d;
+  width: auto;
+  height: 18px;
+  padding: 0 5px;
+  top: 28px;
+  bottom: 0px;
+  left: 25px;
+  transition: all 0.1s ease;
+  z-index: 10;
+}
+
+.modal-contact__input:valid,
+.modal-contact__textarea:valid {
+  outline: none;
+  border: 1px solid #13ba19;
+}
+.modal-contact__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.modal-contact__input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.modal-contact__input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.modal-contact__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.modal-contact__submit {
+  display: block;
+  background: none;
+  border-radius: 48px;
+  outline: none;
+  border: none;
+  background: $orange;
+  @include text-options(14px, $white, 16px, 800);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding:  15.5px 0;
+  width: 219px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: -2px;
+}
+
+.modal-contact__data {
+  padding-left: 56px;
+  padding-right: 25px;
+  margin-top: 20px;
+}
+
+.modal-contact__checkbox-label {
+  position: relative;
+  display: block;
+  @include text-options(14px, $text-white, 20px, 500);
+}
+
+.modal-contact__link {
+  @include text-options(14px, $text-white, 20px, 500);
+  cursor: pointer;
+}
+
+.modal-contact__checkbox-label input[type="checkbox"] + .modal-contact__checkbox-indicator {
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  width: 16px;
+  height: 16px;
+  background: rgba(242, 137, 15, 0.5);
+  border-radius: 4px;
+}
+
+.modal-contact__checkbox-label input[type="checkbox"]:checked + .modal-contact__checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url("../img/icon-checkbox-active.svg") no-repeat 50% 50%;
+  background-color: $orange;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: $mobile-width) {
+  .modal-contact {
+    width: 360px;
+    min-height: 761px;
+    z-index: 999;
+    padding-top: 45px;
+
+    @include vertical-position();
+  }
+
+  .modal-contact__close {
+    top: 50px;
+    right: 20px;
+  }
+
+  .modal-contact__title {
+    padding-left: 16px;
+    margin-bottom: 40px;
+  }
+
+  .modal-contact__wrapper {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+  .modal-contact__input-label {
+    margin-bottom: 16px;
+  }
+
+  .modal-contact__submit {
+    margin: 0 auto;
+    margin-top: -5px;
+  }
+
+  .modal-contact__form {
+    padding: 0 16px;
+  }
+
+  .modal-contact__data {
+    padding-left: 25px;
+    padding-right: 0;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: $mobile-small-width) {
+  .modal-contact {
+    width: 100%;
+  }
+}

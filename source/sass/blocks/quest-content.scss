@@ -1,0 +1,190 @@
+.quest-content {
+  padding-top: 11%;
+}
+
+.quest-content__wrapper {
+  padding-left: 42.5%;
+}
+
+.quest-content--maniac {
+  width: 100%;
+  min-height: 768px;
+  background-image: $background-gradient, url("../img/D-maniac-bg@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-maniac-bg@2x.jpg");
+  }
+}
+
+.quest-content--experiment {
+  width: 100%;
+  min-height: 768px;
+  background-image: $background-gradient, url("../img/D-experiment-bg@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-experiment-bg@2x.jpg");
+  }
+}
+
+.quest-content--mansion {
+  width: 100%;
+  min-height: 768px;
+  background-image: $background-gradient, url("../img/D-mansion-bg@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-mansion-bg@2x.jpg");
+  }
+}
+
+.quest-content--ritual {
+  width: 100%;
+  min-height: 768px;
+  background-image: $background-gradient, url("../img/D-ritual-bg@1x.jpg");
+
+  @include flexible-background;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: $background-gradient, url("../img/D-ritual-bg@1x.jpg");
+  }
+}
+
+.quest-content__breadcrumbs {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.quest-content__title {
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.quest-content__desc-text {
+  width: 87%;
+  @include text-options(15px, $text-white, 22px, 500);
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding-left: 30px;
+  margin-top: 0;
+}
+
+.quest-content__button {
+  margin-top: 42px;
+  margin-left: 33px;
+}
+
+.quest-content__button {
+  display: block;
+  background: $orange;
+  border-radius: 65px;
+  @include text-options(17px, $white, 30px, 800);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  @include reset-decoration;
+  @include reset-button-styles;
+  padding:  17.5px 0;
+  width: 250px;
+  text-align: center;
+
+  &:hover {
+    background: #f39425;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .quest-content {
+    position: relative;
+    padding-top: 16%;
+  }
+
+  .quest-content__wrapper {
+    padding-left: 35%;
+  }
+
+  .quest-content__desc-text {
+    width: 95%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .quest-content {
+    padding-top: 25%;
+  }
+
+  .quest-content__main {
+    padding-top: 290px;
+    padding-bottom: 58px;
+  }
+
+  .quest-content--maniac {
+    width: 100%;
+    background-image: $background-gradient, $background-radial, url("../img/M-maniac-bg@1x.jpg");
+    background-size: 100%;
+    background-position: top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: $background-gradient, $background-radial, url("../img/M-maniac-bg@2x.jpg");
+    }
+  }
+
+  .quest-content--experiment {
+    width: 100%;
+    background-image: $background-gradient, $background-radial, url("../img/M-experiment-bg@1x.jpg");
+    background-size: 100%;
+    background-position: top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: $background-gradient, $background-radial, url("../img/M-experiment-bg@2x.jpg");
+    }
+  }
+
+  .quest-content--mansion {
+    width: 100%;
+    background-image: $background-gradient, url("../img/M-mansion-bg@1x.jpg");
+    background-size: 100%;
+    background-position: top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: $background-gradient, url("../img/M-mansion-bg@2x.jpg");
+    }
+  }
+
+  .quest-content--ritual {
+    width: 100%;
+    background-image: $background-gradient, $background-radial, url("../img/M-ritual-bg@1x.jpg");
+    background-size: 100%;
+    background-position: top;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: $background-gradient, $background-radial, url("../img/M-ritual-bg@1x.jpg");
+    }
+  }
+
+  .quest-content__wrapper {
+    padding-left: 0;
+  }
+
+  .quest-content__breadcrumbs {
+    padding-left: 0;
+  }
+
+  .quest-content__title {
+    margin-bottom: 20px;
+  }
+
+  .quest-content__desc-text {
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 28px;
+  }
+
+  .quest-content__button {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+}

@@ -127,9 +127,9 @@
     display: flex;
   }
 
-  .page-nav-top--nojs ~ .page-nav-social,
-  .page-nav-top--opened ~ .page-nav-social {
-    margin-bottom: 20%;
+  .page-nav--nojs {
+    position: relative;
+    background-color: $color-overlay;
   }
 
   .page-nav-top__list {
@@ -139,10 +139,19 @@
     padding-bottom: 40px;
   }
 
+  .page-nav-top--nojs .page-nav-top__list {
+    padding-top: 0;
+  }
+
   .page-nav-top__city {
     display: block;
     margin: 0 auto;
     margin-bottom: 22px;
+    padding-left: 25px;
+
+    &::before {
+      left: 0;
+    }
   }
 
   .page-nav-top__phone {

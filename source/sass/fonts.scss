@@ -37,3 +37,11 @@
   font-display: swap;
   src: local("Raleway-ExtraBold"), url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff");
 }
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: local("Raleway-Black"), url("../fonts/Raleway-Black.woff2") format("woff2"), url("../fonts/Raleway-Black.woff") format("woff");
+}

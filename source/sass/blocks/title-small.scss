@@ -1,0 +1,3 @@
+.title-small {
+  @include text-options(32px, $text-white, 38px, 800);
+}

@@ -1,0 +1,74 @@
+.quest-settings {
+  @include reset-list;
+  display: flex;
+  padding: 0 0 20px 30px;
+}
+
+.quest-settings__item {
+  display: flex;
+}
+
+.quest-settings__text {
+  @include text-options(14px, $text-white, 20px, normal);
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.quest-settings__item--clock {
+  padding-right: 4%;
+}
+
+.quest-settings__item--person {
+  padding-left: 4%;
+  padding-right: 4.5%;
+  border-left: 1px solid rgba(255, 255, 255, 0.36);
+  border-right: 1px solid rgba(255, 255, 255, 0.36);
+}
+
+.quest-settings__item--puzzle {
+  padding-left: 4%;
+}
+
+.quest-settings__pic {
+  margin-right: 7px;
+}
+
+@media (max-width: $mobile-width) {
+  .quest-settings__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quest-settings {
+    padding: 0 0 15px 0;
+  }
+
+  .quest-settings__pic {
+    margin-right: 0;
+  }
+
+  .quest-settings__text {
+    text-align: center;
+    line-height: 17px;
+    padding: 0;
+  }
+
+  .quest-settings__item {
+    width: 33.3%;
+  }
+
+  .quest-settings__item--puzzle {
+    padding-left: 6%;
+  }
+
+  .quest-settings__item--clock {
+    padding-left: 0;
+    padding-right: 5%;
+  }
+
+  .quest-settings__item--person {
+    padding: 0;
+  }
+}
