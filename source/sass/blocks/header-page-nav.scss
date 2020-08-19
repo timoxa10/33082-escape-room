@@ -23,6 +23,10 @@
   @include reset-decoration;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .header-page-nav__link--active {

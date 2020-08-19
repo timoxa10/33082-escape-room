@@ -50,6 +50,10 @@
   @include text-options(14px, #e6e6e6, 17px, 500);
 }
 
+.modal-contact__input:invalid {
+  box-shadow: none;
+}
+
 .modal-contact__textarea {
   width: 100%;
   height: 120px;
@@ -125,7 +129,6 @@
   display: block;
   background: none;
   border-radius: 48px;
-  outline: none;
   border: none;
   background: $orange;
   @include text-options(14px, $white, 16px, 800);
@@ -134,10 +137,10 @@
   padding:  15.5px 0;
   width: 219px;
   text-align: center;
-  cursor: pointer;
   margin-left: 25%;
   margin-right: 25%;
   margin-top: -2px;
+  cursor: pointer;
 }
 
 .modal-contact__data {
@@ -186,6 +189,7 @@
     min-height: 761px;
     z-index: 999;
     padding-top: 45px;
+    top: 0;
 
     @include vertical-position();
   }

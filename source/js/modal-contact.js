@@ -17,9 +17,8 @@ var storageName = '';
 var storageEmail = '';
 var storageQuestion = '';
 try {
-  storageName = localStorage.getItem('modal-contact__input--name');
-  storageEmail = localStorage.getItem('modal-contact__input--email');
-  storageQuestion = localStorage.getItem('modal-contact__textarea');
+  storageName = localStorage.getItem('fieldName');
+  storageEmail = localStorage.getItem('fieldEmail');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -32,6 +31,13 @@ var hidecontactWrapper = function () {
 var showcontactWrapper = function () {
   contactWrapper.classList.remove('hidden');
   modalWrapper.classList.remove('hidden');
+  setFocusField();
+  if (storageName) {
+    fieldName.value = storageName;
+  }
+  if (storageEmail) {
+    fieldEmail.value = storageEmail;
+  }
 };
 
 var opencontactWrapperHandler = function (evt) {
@@ -87,6 +93,10 @@ var fieldNameInputHandler = function () {
 
 var fieldEmailInputHandler = function () {
   validateEmail();
+};
+
+var setFocusField = function () {
+  fieldName.focus();
 };
 
 locationButtonClose.addEventListener('click', closeFormOnButton);

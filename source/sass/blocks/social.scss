@@ -1,3 +1,8 @@
+.social {
+  @include reset-list;
+  display: flex;
+}
+
 .social__item {
   margin-right: 7px;
 
@@ -6,41 +11,41 @@
   }
 }
 
-.social {
-  @include reset-list;
-  display: flex;
-}
-
 .social__link {
   width: 28px;
   height: 28px;
-  background: #c6c4c2;
-  border-radius: 50%;
 }
 
-.social__link--ig:hover {
-  cursor: pointer;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+.social__link--ig {
+  display: block;
+  background: url("../img/icon-social-ig.svg") no-repeat center;
+  background-size: 28px 28px;
+
+  &:hover {
+    background: url("../img/icon-social-ig-hover.svg") no-repeat center;
+  }
 }
 
-.social__link--ig:hover .social__box--ig {
-  fill: $white;
-}
+.social__link--vk {
+  display: block;
+  background: url("../img/icon-social-vk.svg") no-repeat center;
+  background-size: 28px 28px;
 
-.social__link--vk:hover {
-  cursor: pointer;
-  background: #4f779f;
-}
-
-.social__link--vk:hover .social__box--vk {
-  fill: $white;
+  &:hover {
+    background: url("../img/icon-social-vk-hover.svg") no-repeat center;
+  }
 }
 
 @media (max-width: $tablet-width) {
-  .social__link {
+  .social__link,
+  .social__box {
     width: 36px;
     height: 36px;
+  }
+
+  .social__link--ig,
+  .social__link--vk {
+    background-size: 36px 36px;
   }
 
   .social__item {

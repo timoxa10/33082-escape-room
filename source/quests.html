@@ -54,19 +54,13 @@
     <div class="page-nav__social page-nav-social">
       <ul class="page-nav-social__list social">
         <li class="social__item">
-          <a class="social__link social__link--ig centered" href="#">
+          <a class="social__link social__link--ig" href="#">
             <span class="visually-hidden">Мы в Инстаграме</span>
-            <svg class="social__box social__box--ig" width="13" height="13">
-              <use xlink:href="img/sprite.svg#icon-social-ig"></use>
-            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--vk centered" href="#">
+          <a class="social__link social__link--vk" href="#">
             <span class="visually-hidden">Мы во Вконтакте</span>
-            <svg class="social__box social__box--vk" width="16" height="9">
-              <use xlink:href="img/sprite.svg#icon-social-vk"></use>
-            </svg>
           </a>
         </li>
       </ul>
@@ -302,11 +296,11 @@
       <div class="modal-contact__wrapper">
         <div class="modal-contact__field">
           <label class="modal-contact__input-label" for="user-name">Чтобы мы смогли обращаться к вам, оставьте ваше имя</label>
-          <input id="user-name" type="text" name="user-name" placeholder="Имя" class="modal-contact__input modal-contact__input--email" required min="3" max="15">
+          <input id="user-name" type="text" name="user-name" placeholder="Имя" class="modal-contact__input modal-contact__input--name" required minlength="3" maxlength="15" autofocus>
         </div>
         <div class="modal-contact__field">
           <label class="modal-contact__input-label" for="user-email">Чтобы вы получили ответ, оставьте ваш e-mail </label>
-          <input id="user-email" type="email" name="user-email" placeholder="E-mail" class="modal-contact__input modal-contact__input--name" required>
+          <input id="user-email" type="email" name="user-email" placeholder="E-mail" class="modal-contact__input modal-contact__input--email" required>
         </div>
         <div class="modal-contact__field">
           <label class="modal-contact__input-label" for="user-text">Ваш вопрос:</label>
@@ -327,6 +321,7 @@
     </button>
   </section>
   <div class="modal-wrapper hidden"></div>
+  <script src="js/svg4everybody.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/modal-contact.js"></script>
   <script src="js/modal-location.js"></script>
