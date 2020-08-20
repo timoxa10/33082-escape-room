@@ -6,8 +6,8 @@
   .button-back {
     display: block;
     position: relative;
-    display: block;
     background: none;
+
     @include reset-button-styles;
     @include text-options(12px, $text-white, 17px, bold);
     @include reset-decoration;

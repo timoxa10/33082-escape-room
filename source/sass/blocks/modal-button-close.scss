@@ -3,6 +3,7 @@
   width: 14px;
   height: 14px;
   background-color: transparent;
+
   @include reset-button-styles;
   z-index: 5;
   cursor: pointer;

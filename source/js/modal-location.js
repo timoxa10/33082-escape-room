@@ -4,9 +4,6 @@ var locationButton = document.querySelector('.page-nav-top__city');
 var buttonClose = document.querySelector('.modal-location__close');
 var locationForm = document.querySelector('.modal-location');
 var modalWrapper = document.querySelector('.modal-wrapper');
-
-var askQuestionButton = document.querySelector('.page-nav-social__form');
-var locationButtonClose = document.querySelector('.modal-contact__close');
 var contactForm = document.querySelector('.modal-contact');
 
 var hideForm = function () {
@@ -29,7 +26,7 @@ var closeFormOnButton = function () {
 };
 
 var escapeKeydownHandler = function (evt) {
-  if (evt.key == 'Escape') {
+  if (evt.key === 'Escape') {
     hideForm();
   }
 };

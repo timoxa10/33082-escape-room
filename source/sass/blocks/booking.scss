@@ -67,13 +67,14 @@
   position: relative;
   padding-left: 20px;
   padding-right: 25px;
+
   @include text-options(12px, rgba(255, 255, 255, 0.82), 17px, 500);
 }
 
 .booking__price {
   @include text-options(12px, $white, 17px, 500);
   text-align: center;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
   padding-top: 30px;
 }
 
@@ -91,18 +92,7 @@
 .booking__availability-item--occupied::before {
   content: "";
   position: absolute;
-  background: linear-gradient(158.6deg, #F2890F 9.78%, #B8600F 79.81%);
-  border-radius: 3px;
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 15px;
-}
-
-.booking__availability-item--occupied::before {
-  content: "";
-  position: absolute;
-  background: linear-gradient(158.6deg, #F2890F 9.78%, #B8600F 79.81%);
+  background: linear-gradient(158.6deg, #f2890f 9.78%, #b8600f 79.81%);
   border-radius: 3px;
   top: 0;
   left: 0;
@@ -113,7 +103,7 @@
 .booking__availability-item--selected::before {
   content: "";
   position: absolute;
-  background: linear-gradient(180deg, #2CDB52 0%, #13BA19 100%);
+  background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
   border-radius: 3px;
   top: 0;
   left: 0;
@@ -158,7 +148,7 @@
   top: 0;
   width: 110px;
   height: 38px;
-  background: linear-gradient(180deg, #2CDB52 0%, #13BA19 100%);
+  background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
   border: none;
   border-radius: 65px;
 }
@@ -170,7 +160,7 @@
   top: 0;
   width: 110px;
   height: 38px;
-  background: linear-gradient(158.6deg, #F2901D 9.78%, #D26F13 79.81%);
+  background: linear-gradient(158.6deg, #f2901d 9.78%, #d26f13 79.81%);
   border: none;
   border-radius: 65px;
 }
@@ -181,6 +171,7 @@
 
 .booking__time-text {
   position: absolute;
+
   @include text-options(16px, $white, 23px, bold);
   letter-spacing: 0.05em;
   width: 110px;
@@ -188,7 +179,7 @@
   z-index: 5;
   text-align: center;
   top: 8px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 .booking__checkout {
@@ -201,7 +192,7 @@
 
 .booking__checkout-text {
   @include text-options(15px, $white, 22px, 500);
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
   margin: 0;
   margin-right: 15%;
 }
@@ -241,13 +232,13 @@
   .booking {
     padding-top: 25%;
     padding-bottom: 40%;
-    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/M-bg-booking@1x.jpg");
+    background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/M-bg-booking@1x.jpg");
     background-color: rgba(26, 26, 26, 0.45);
 
     @include flexible-background;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150E 89.63%, #1A140D 106.79%), url("../img/M-bg-booking@2x.jpg");
+      background-image: linear-gradient(167.98deg, rgba(99, 60, 15, 0) 23.22%, rgba(99, 60, 15, 0) 37.46%, #24150e 89.63%, #1a140d 106.79%), url("../img/M-bg-booking@2x.jpg");
     }
   }
 
@@ -262,7 +253,6 @@
   }
 
   .booking__checkout-button {
-    padding-top: 0;
     padding-top: 25px;
   }
 

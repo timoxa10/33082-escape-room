@@ -20,6 +20,7 @@
 
 .main-promo__text {
   width: 42%;
+
   @include text-options(17px, $text-white, 25px, 500);
 }
 

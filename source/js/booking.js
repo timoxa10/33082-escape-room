@@ -11,7 +11,7 @@ var setTextValues = function () {
   orderButtonBack.setAttribute('href', localStorage.questLink);
   orderGenre.textContent = localStorage.questGenre;
   orderQuestTitle.textContent = localStorage.questName;
-}
+};
 
 // TIME
 var bookingTime = document.querySelector('.booking__time');

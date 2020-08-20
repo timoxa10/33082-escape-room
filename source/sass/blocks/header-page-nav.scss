@@ -19,6 +19,7 @@
 
 .header-page-nav__link {
   display: block;
+
   @include text-options(14px, $text-white, 16px, 600);
   @include reset-decoration;
   letter-spacing: 0.03em;

@@ -8,14 +8,11 @@ var contactForm = document.querySelector('.modal-contact__form');
 var modalWrapper = contactWrapper.querySelector('.modal-wrapper');
 var fieldName = contactWrapper.querySelector('.modal-contact__input--name');
 var fieldEmail = contactWrapper.querySelector('.modal-contact__input--email');
-var fieldQuestion = contactWrapper.querySelector('.modal-contact__textarea');
 var checkboxField = contactWrapper.querySelector('.modal-contact__checkbox:checked');
 var fieldSubmit = contactWrapper.querySelector('.modal-contact__submit');
-var fieldInputs = contactWrapper.querySelectorAll('.modal-contact__input');
 var isStorageSupport = true;
 var storageName = '';
 var storageEmail = '';
-var storageQuestion = '';
 try {
   storageName = localStorage.getItem('fieldName');
   storageEmail = localStorage.getItem('fieldEmail');
@@ -50,7 +47,7 @@ var closeFormOnButton = function () {
 };
 
 var escapeKeydownContactHandler = function (evt) {
-  if (evt.key == 'Escape') {
+  if (evt.key === 'Escape') {
     hidecontactWrapper();
   }
 };

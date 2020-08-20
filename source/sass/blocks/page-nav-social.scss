@@ -9,6 +9,7 @@
   background: none;
   border: none;
   padding: 0;
+
   @include text-options(12px, $text-white, 17px, 500);
   border-bottom: 1px dashed $text-white;
   outline: none;

@@ -1,5 +1,5 @@
 .modal-contact {
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border-radius: 3px;
   position: absolute;
   width: 480px;
@@ -37,16 +37,18 @@
 
 .modal-contact__input-label {
   display: block;
+
   @include text-options(15px, $text-white, 22px, 500);
   margin-bottom: 15px;
 }
 
 .modal-contact__input {
   width: 100%;
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 3px;
   padding: 16px 0 16px 24px;
+
   @include text-options(14px, #e6e6e6, 17px, 500);
 }
 
@@ -57,10 +59,11 @@
 .modal-contact__textarea {
   width: 100%;
   height: 120px;
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 3px;
   padding: 16px 0 0 24px;
+
   @include text-options(14px, #e6e6e6, 17px, 500);
 }
 
@@ -81,11 +84,9 @@
 }
 
 .modal-contact__moved {
-  @include text-options(12px, rgba(230, 230, 230, 0.64), 17px, 500);
-}
-
-.modal-contact__moved {
   display: none;
+
+  @include text-options(12px, rgba(230, 230, 230, 0.64), 17px, 500);
 }
 
 .modal-contact__input:focus ~ .modal-contact__moved,
@@ -98,7 +99,7 @@
   height: 18px;
   padding: 0 5px;
   top: 28px;
-  bottom: 0px;
+  bottom: 0;
   left: 25px;
   transition: all 0.1s ease;
   z-index: 10;
@@ -109,6 +110,7 @@
   outline: none;
   border: 1px solid #13ba19;
 }
+
 .modal-contact__input:focus::-webkit-input-placeholder {
   color: transparent;
 }
@@ -127,14 +129,14 @@
 
 .modal-contact__submit {
   display: block;
-  background: none;
   border-radius: 48px;
   border: none;
   background: $orange;
+
   @include text-options(14px, $white, 16px, 800);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding:  15.5px 0;
+  padding: 15.5px 0;
   width: 219px;
   text-align: center;
   margin-left: 25%;
@@ -152,6 +154,7 @@
 .modal-contact__checkbox-label {
   position: relative;
   display: block;
+
   @include text-options(14px, $text-white, 20px, 500);
 }
 

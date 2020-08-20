@@ -10,6 +10,15 @@
 .scroll-menu__item {
   display: flex;
   align-items: center;
+  padding: 4px 35px 0 0;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.32);
+  }
+
+  &:not(:first-child) {
+    padding-left: 43px;
+  }
 
   &:hover {
     cursor: pointer;
@@ -26,18 +35,6 @@
 
 .scroll-menu::-webkit-scrollbar {
   display: none;
-}
-
-.scroll-menu__item {
-  padding: 4px 35px 0px 0;
-
-  &:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.32);
-  }
-
-  &:not(:first-child) {
-    padding-left: 43px;
-  }
 }
 
 .scroll-menu__icon {

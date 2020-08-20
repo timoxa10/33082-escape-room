@@ -1,5 +1,5 @@
 .modal-location {
-  background: linear-gradient(0deg, #141414 0%, #1F1D1D 100%);
+  background: linear-gradient(0deg, #141414 0%, #1f1d1d 100%);
   border-radius: 3px;
   position: absolute;
   width: 480px;
@@ -30,6 +30,7 @@
 .modal-location__button {
   position: relative;
   background: none;
+
   @include reset-button-styles;
   @include text-options(17px, $text-white, 27px, normal);
   width: auto;
@@ -41,7 +42,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: no-repeat 0 0 url(../img/icon-define-location.svg);
+    background: no-repeat 0 0 url("../img/icon-define-location.svg");
     top: 0;
     left: -32px;
     width: 25px;
@@ -68,7 +69,6 @@
 
 .modal-location__list-link {
   @include reset-decoration;
-
   @include text-options(24px, $text-white, 29px, bold);
   opacity: 0.32;
 
@@ -81,7 +81,7 @@
 .modal-location__list-link--active {
   opacity: 1;
   color: $orange;
-  border-bottom: 2px solid #F2890F;
+  border-bottom: 2px solid #f2890f;
 }
 
 @media (max-width: $mobile-width) {

@@ -4,6 +4,7 @@
 
 .select-dropdown__label {
   display: block;
+
   @include text-options(15px, $white, 22px, 500);
   border-bottom: 2px solid $orange;
   padding-bottom: 5px;
@@ -38,30 +39,30 @@
   opacity: 0;
   pointer-events: none;
   transform-origin: top left;
-  transform: scale(1,0);
-  transition: all ease-in-out .3s;
+  transform: scale(1, 0);
+  transition: all ease-in-out 0.3s;
   z-index: 50;
 
   &.active {
     opacity: 1;
     pointer-events: auto;
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
 .select-dropdown__list-item {
   @include text-options(15px, $white, 22px, 500);
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
   padding: 10px 15px;
-  background: linear-gradient(158.6deg,#f2901d 9.78%,#d26f13 79.81%);
+  background: linear-gradient(158.6deg, #f2901d 9.78%, #d26f13 79.81%);
   border-top: 1px solid #e6e6e6;
   cursor: pointer;
   text-align: center;
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
 
   &:hover {
-    background: linear-gradient(180deg,#2cdb52 0%,#13ba19 100%);
-    transition: all ease-in-out .3s;
+    background: linear-gradient(180deg, #2cdb52 0%, #13ba19 100%);
+    transition: all ease-in-out 0.3s;
   }
 }
 
