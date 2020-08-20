@@ -47,6 +47,10 @@
   .social__link--ig,
   .social__link--vk {
     background-size: 36px 36px;
+
+    &:hover {
+      background-size: 36px 36px;
+    }
   }
 
   .social__item {
