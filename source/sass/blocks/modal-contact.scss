@@ -234,6 +234,11 @@
     padding-right: 0;
     margin-top: 22px;
   }
+
+  .modal-contact__input:focus ~ .modal-contact__moved,
+  .modal-contact__input:not(:focus):valid ~ .modal-contact__moved {
+    top: 50px;
+  }
 }
 
 @media (max-width: $mobile-small-width) {
