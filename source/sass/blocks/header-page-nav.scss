@@ -3,13 +3,14 @@
     @include reset-list;
     width: 58%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-right: auto;
   }
 
   .header-page-nav__item {
     margin-bottom: 5px;
+    margin-right: 9%;
 
     &:last-child {
       margin-right: 0;

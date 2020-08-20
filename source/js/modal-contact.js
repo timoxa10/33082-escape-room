@@ -74,9 +74,11 @@ var isFieldChecked = function () {
   if (checkboxField.checked === true) {
     fieldSubmit.disabled = false;
     fieldSubmit.style.background = '#f28A0f';
+    fieldSubmit.classList.add('modal-contact__submit--hover');
   } else {
     fieldSubmit.disabled = true;
     fieldSubmit.style.background = '#b8b8b8';
+    fieldSubmit.classList.remove('modal-contact__submit--hover');
   }
 };
 

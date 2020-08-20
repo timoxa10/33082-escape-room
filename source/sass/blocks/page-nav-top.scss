@@ -2,7 +2,7 @@
   .page-nav-top__content {
     display: flex;
     align-items: center;
-    padding: 20px 39px 0 32px;
+    padding: 22px 39px 0 32px;
   }
 
   .page-nav-top__wrapper {
@@ -50,7 +50,7 @@
   }
 
   &:hover {
-    border-bottom: 1px dashed $orange;
+    text-decoration: underline;
     cursor: pointer;
   }
 }
@@ -64,6 +64,10 @@
   letter-spacing: 0.03em;
   font-feature-settings: "pnum" on, "lnum" on;
   margin-top: -5px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: $tablet-width) {
